@@ -1,101 +1,130 @@
-* {
-	margin: 0;
-	padding: 0;
-	line-height: 100%;
-	text-decoration: none;
-	list-style-type: none;
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
 body {
-	background-color: silver;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: silver;
 }
 
 #container {
-	margin: auto;
-	max-width: 960px;
+  margin: auto;
+  max-width: 960px;
 }
 
-header {
-	padding: 4rem;
-	background-color: #333;
-	color: white;
+header{
+  padding: 3rem;
+  background-color: #333;
+  color: white;
 }
 
-header h1 {
-	text-align: center;
+header h1{
+  text-align: center;
 }
 
-nav ul {
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #666;
+#button {
+  width: 100%;
+  padding: 6px 0;
+  background: gray;
+  text-align: center;
+}
+#button a {
+  color:#FFF;
+}
+#button img {
+  width: 32px;
 }
 
-	nav li {
-		width: 25%;
-	}
-
-	nav a {
-		display: block;
-		padding: 12px 0 12px 0;
-		color: #FFF;
-		text-align: center;
-		border-right:1px solid silver;
-	}
-
-	nav li:last-child a {
-		border: none;
-	}
-
-	nav li a:hover {
-		background: black;
-	}
-
-article {
-	padding: 40px;
-	background-color: white;
+#menu {
+  display: flex;
+  flex-direction: column;
 }
 
-	article p {
-		line-height: 180%;
-	}
+#menu li {
+  width: 100%;
+  border-top: 1px solid gray;
+  list-style-type: none;
+  font-size: 80%;
+}
+
+#menu li a {
+    display: block;
+    padding: 12px 0 12px 0;
+    color: #FFF;
+    text-align: center;
+    border-right:1px solid gray;
+    background-color: #666;
+}
+
+#menu li:last-child a {
+  border: none;
+}
+
+#menu li a:hover {
+  background: black;
+}
+
+main {
+
+}
+
+article,
+aside {
+  padding: 2rem;
+  text-align: justify;
+  font-size: 0.85rem;
+  background-color: white;
+}
+
+aside {
+  background-color: #EEE;
+}
 
 footer {
-	height: 40px;
-	padding: 40px;
-	text-align: center;
-	background-color: #333;
-	color:white;
+  height: 40px;
+  padding: 40px;
+  text-align: center;
+  background-color: #333;
+  color:white;
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) {
 
-	header h1 {
-		font-size: 24px;
-	}
+  #button {
+    display: none;
+  }
 
-	nav li {
-		width: 50%;
-		border-bottom: 1px solid silver;
-	}
+  #menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #menu li {
+    width: 50%;
+  }
+
+  article,
+  aside {
+    font-size: 1rem;
+  }
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 769px) {
 
-	article {
-		font-size: 80%;
-	}
+  #menu {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  #menu li {
+    flex:1;
+  }
 
-	header h1 {
-		font-size: 18px;
-	}
 
-	nav li {
-		width: 100%;
-		border-bottom: 1px solid silver;
-		font-size: 80%;
-	}
+
 
 }

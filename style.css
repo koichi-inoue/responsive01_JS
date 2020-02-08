@@ -1,3 +1,6 @@
+/*-------------------------------
+               BASE
+--------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +12,10 @@ body {
   font-size: 16px;
   background-color: silver;
 }
+
+/*-------------------------------
+         LAYOUT MOBILE
+--------------------------------*/
 
 #container {
   margin: auto;
@@ -60,7 +67,6 @@ header h1{
 #lists li:last-child a {
   border: none;
 }
-
 #lists li a:hover {
   background: black;
 }
@@ -69,22 +75,21 @@ main {
   display: flex;
   flex-direction: column;
 }
-
 article {
   padding: 2rem;
   text-align: justify;
   font-size: 0.85rem;
   background-color: white;
 }
-
 aside {
   padding: 2rem;
   text-align: left;
   font-size: 0.85rem;
   background-color: #EEE;
 }
-
+article h1,
 article p,
+aside h1,
 aside p {
   margin-bottom: 1rem;
 }
@@ -96,6 +101,9 @@ footer {
   color:white;
 }
 
+/*-------------------------------
+      LAYOUT PC (OverWrite) 
+--------------------------------*/
 
 @media only screen and (min-width: 769px) {
 
@@ -123,18 +131,15 @@ footer {
   main {
     flex-direction: row;
   }
-
-  article,
-  aside {
+  article {
+    flex: 3;
     padding: 3rem;
     font-size: 1rem;
   }
-
-  article {
-    flex: 3;
-  }
   aside {
     flex: 1;
+    padding: 3rem;
+    font-size: 1rem;
   }
 
 }

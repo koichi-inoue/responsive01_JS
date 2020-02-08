@@ -19,7 +19,7 @@ $( function(){
     ShowAndHide($(window).width());
   });
 
-  // MENUボタンクリック時のトグル動作
+  // メニューボタンクリック時のトグル動作
   $("#button").click( function () {
     $("#lists").slideToggle();
   });

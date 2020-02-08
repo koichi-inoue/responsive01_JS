@@ -70,21 +70,23 @@ main {
   flex-direction: column;
 }
 
-article,
-aside {
+article {
   padding: 2rem;
   text-align: justify;
   font-size: 0.85rem;
   background-color: white;
 }
 
+aside {
+  padding: 2rem;
+  text-align: left;
+  font-size: 0.85rem;
+  background-color: #EEE;
+}
+
 article p,
 aside p {
   margin-bottom: 1rem;
-}
-
-aside {
-  background-color: #EEE;
 }
 
 footer {

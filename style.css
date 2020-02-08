@@ -25,17 +25,17 @@ header h1{
 	text-align: center;
 }
 
-#menu {
+nav ul {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #666;
 }
 
-	#menu li{
+	nav li{
 		width: 25%;
 	}
 
-	#menu li a {
+	nav a {
 		display: block;
 		padding: 12px 0 12px 0;
 		color: #FFF;
@@ -43,11 +43,11 @@ header h1{
 		border-right:1px solid silver;
 	}
 
-	#menu li:last-child a{
+	nav li:last-child a{
 		border: none;
 	}
 
-	#menu li a:hover{
+	nav li a:hover{
 		background: black;
 	}
 
@@ -71,11 +71,11 @@ footer{
 
 @media only screen and (max-width: 768px) {
 
-	#page_title{
+	header h1 {
 		font-size: 24px;
 	}
 
-	#menu li {
+	nav li {
 		width: 50%;
 		border-bottom: 1px solid silver;
 	}
@@ -84,15 +84,15 @@ footer{
 
 @media only screen and (max-width: 480px) {
 
-	article{
+	article {
 		font-size: 80%;
 	}
 
-	#page_title{
+	header h1 {
 		font-size: 18px;
 	}
 
-	#menu li {
+	nav li {
 		width: 100%;
 		border-bottom: 1px solid silver;
 		font-size: 80%;
